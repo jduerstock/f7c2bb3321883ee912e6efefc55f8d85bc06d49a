@@ -7244,8 +7244,7 @@
 
 sub_2b7f8:
 	push	bp
-	; mov	bp,sp
-	db	0x8b,0xec
+	mov_bp_sp
 	push	si
 	db	0x2b,0xf6 ; sub si,si
 	mov	es,[0x418a]
