@@ -1,4 +1,8 @@
 
+%macro add_al_cl 0
+	db	0x02,0xc1 ; add al,cl
+%endmacro
+
 %macro add_si_bx 0
 	db	0x03,0xf3 ; add si,bx
 %endmacro
