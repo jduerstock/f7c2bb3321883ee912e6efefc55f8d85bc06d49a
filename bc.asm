@@ -1320,7 +1320,7 @@ sub_144cf:
 	jz	loc_144f5
 	mov	ch,[si+0x2257]
 	and	[bx+0x2],ch
-	db	0xeb,0x12
+	jmp	short loc_14507
 
 loc_144f5:
 	mov	bx,[di+0x221e]
