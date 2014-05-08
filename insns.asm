@@ -1,6 +1,15 @@
 
+%macro add_si_bx 0
+	db	0x03,0xf3 ; add si,bx
+%endmacro
+
 %macro add_di_ax 0
 	db	0x03,0xf8 ; add di,ax
+%endmacro
+
+%macro add_ax 1
+	db	0x05
+	dw	%1
 %endmacro
 
 %macro xor_ah_ah 0
@@ -20,13 +29,8 @@
 	db	0x8b,0xd0 ; mov dx,ax
 %endmacro
 
-%macro add_si_bx 0
-	db	0x03,0xf3 ; add si,bx
-%endmacro
-
-%macro add_ax 1
-	db	0x05
-	dw	%1
+%macro or_al_al 0
+	db	0x0a,0xc0 ; or al,al
 %endmacro
 
 %macro or_ax_ax 0
