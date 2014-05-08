@@ -25,10 +25,6 @@
 	dw	%1
 %endmacro
 
-%macro mov_dx_ax 0
-	db	0x8b,0xd0 ; mov dx,ax
-%endmacro
-
 %macro or_al_al 0
 	db	0x0a,0xc0 ; or al,al
 %endmacro
@@ -97,6 +93,10 @@
 	db	0x8a,0xc4 ; mov al,ah
 %endmacro
 
+%macro mov_ax_cx 0
+	db	0x8b,0xc1 ; mov ax,cx
+%endmacro
+
 %macro mov_ax_dx 0
 	db	0x8b,0xc2 ; mov ax,dx
 %endmacro
@@ -111,6 +111,10 @@
 
 %macro mov_cx_ax 0
 	db	0x8b,0xc8 ; mov	cx,ax
+%endmacro
+
+%macro mov_dx_ax 0
+	db	0x8b,0xd0 ; mov dx,ax
 %endmacro
 
 %macro mov_dx_cx 0
