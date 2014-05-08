@@ -41,6 +41,10 @@
 	db	0x0b,0xdb ; or bx,bx
 %endmacro
 
+%macro sub_bx_bx 0
+	db	0x2b,0xdb ; sub bx,bx
+%endmacro
+
 %macro xor_al_al 0
 	db	0x32,0xc0 ; xor al,al
 %endmacro
