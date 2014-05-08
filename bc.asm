@@ -1317,7 +1317,7 @@ sub_144cf:
 	inc	bx
 	jz	loc_14507
 	dec	bx
-	db	0x74,0x09
+	jz	loc_144f5
 	mov	ch,[si+0x2257]
 	and	[bx+0x2],ch
 	db	0xeb,0x12
