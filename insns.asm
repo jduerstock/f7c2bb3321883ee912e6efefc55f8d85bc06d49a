@@ -81,6 +81,10 @@
 	db	0x33,0xff ; xor di,di
 %endmacro
 
+%macro cmp_al_dl 0
+	db	0x3a,0xc2 ; cmp al,dl
+%endmacro
+
 %macro cmp_di_dx 0
 	db	0x3b,0xfa ; cmp di,dx
 %endmacro
