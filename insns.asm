@@ -185,6 +185,10 @@
 	db	0x8b,0xf2 ; mov si,dx
 %endmacro
 
+%macro mov_si_bx 0
+	db	0x8b,0xf3 ; mov si,bx
+%endmacro
+
 %macro mov_si_di 0
 	db	0x8b,0xf7 ; mov si,di
 %endmacro
