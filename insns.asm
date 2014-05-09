@@ -137,6 +137,10 @@
 	db	0x8b,0xda ; mov bx,dx
 %endmacro
 
+%macro mov_bx_si 0
+	db	0x8b,0xde ; mov bx,si
+%endmacro
+
 %macro mov_bx_di 0
 	db	0x8b,0xdf ; mov bx,di
 %endmacro
