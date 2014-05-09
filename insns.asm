@@ -93,6 +93,10 @@
 	db	0x3a,0xc2 ; cmp al,dl
 %endmacro
 
+%macro cmp_ax_ax 0
+	db	0x3b,0xc0 ; cmp ax,ax
+%endmacro
+
 %macro cmp_cx_ax 0
 	db	0x3b,0xc8 ; cmp cx,ax
 %endmacro
