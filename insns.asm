@@ -45,6 +45,10 @@
 	db	0x0b,0xdb ; or bx,bx
 %endmacro
 
+%macro sub_cx_ax 0
+	db	0x2b,0xc8 ; sub cx,ax
+%endmacro
+
 %macro sub_bx_bx 0
 	db	0x2b,0xdb ; sub bx,bx
 %endmacro
