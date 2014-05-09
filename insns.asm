@@ -20,10 +20,6 @@
 	db	0x30,0xe4 ; xor ah,ah
 %endmacro
 
-%macro cmp_dx_bx 0
-	db	0x3b,0xd3 ; cmp dx,bx
-%endmacro
-
 %macro add_di 1
 	db	0x81,0xc7
 	dw	%1
@@ -91,6 +87,14 @@
 
 %macro cmp_al_dl 0
 	db	0x3a,0xc2 ; cmp al,dl
+%endmacro
+
+%macro cmp_cx_ax 0
+	db	0x3b,0xc8 ; cmp cx,ax
+%endmacro
+
+%macro cmp_dx_bx 0
+	db	0x3b,0xd3 ; cmp dx,bx
 %endmacro
 
 %macro cmp_di_dx 0
