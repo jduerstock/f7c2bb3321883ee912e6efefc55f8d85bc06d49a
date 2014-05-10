@@ -74,6 +74,10 @@
 	db	0x2b,0xc8 ; sub cx,ax
 %endmacro
 
+%macro sub_cx_bx 0
+	db	0x2b,0xcb ; sub cx,bx
+%endmacro
+
 %macro sub_dx_dx 0
 	db	0x2b,0xd2 ; sub dx,dx
 %endmacro
