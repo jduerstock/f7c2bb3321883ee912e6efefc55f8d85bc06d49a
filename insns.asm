@@ -29,6 +29,11 @@
 	dw	%1
 %endmacro
 
+%macro sub_si 1
+	db	0x81,0xee
+	dw	%1
+%endmacro
+
 %macro or_al_al 0
 	db	0x0a,0xc0 ; or al,al
 %endmacro
