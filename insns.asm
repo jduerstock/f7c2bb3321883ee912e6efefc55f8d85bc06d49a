@@ -45,6 +45,10 @@
 	db	0x0b,0xdb ; or bx,bx
 %endmacro
 
+%macro sub_dh_al 0
+	db	0x2a,0xf0 ; sub dh,al
+%endmacro
+
 %macro sub_dh_dh 0
 	db	0x2a,0xf6 ; sub dh,dh
 %endmacro
