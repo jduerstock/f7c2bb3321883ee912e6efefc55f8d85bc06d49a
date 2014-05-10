@@ -61,6 +61,10 @@
 	db	0x2b,0xdb ; sub bx,bx
 %endmacro
 
+%macro sub_di_ax 0
+	db	0x2b,0xf8 ; sub di,ax
+%endmacro
+
 %macro xor_al_al 0
 	db	0x32,0xc0 ; xor al,al
 %endmacro
