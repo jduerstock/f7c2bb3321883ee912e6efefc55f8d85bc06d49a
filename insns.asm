@@ -194,6 +194,10 @@
 	db	0x8b,0xd1 ; mov dx,cx
 %endmacro
 
+%macro mov_dx_bx 0
+	db	0x8b,0xd3 ; mov dx,bx
+%endmacro
+
 %macro mov_bx_ax 0
 	db	0x8b,0xd8 ; mov bx,ax
 %endmacro
