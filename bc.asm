@@ -6702,6 +6702,8 @@ loc_260a7:
 	pop	di
 	xor_ax_ax
 	cld
+
+loc_260b5:
 	cmp	al,0x22
 	jz	loc_26109
 	cmp	al,0xff
@@ -6713,7 +6715,8 @@ loc_260a7:
 	mov	[di],al
 	inc	di
 	sub	dh,0x1
-	db	0x72,0x31,0xe2,0xe6
+	jc	loc_260fe
+	loop	loc_260b5
 
 loc_260cf:
 	db	0x89
