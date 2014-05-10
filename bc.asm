@@ -6712,6 +6712,8 @@ loc_260b9:
 	jz	loc_26117
 	cmp	al,0xa
 	jz	loc_260cf
+
+loc_260c1:
 	mov	al,[es:si]
 	inc	si
 	mov	[di],al
@@ -6774,11 +6776,15 @@ loc_26117:
 	sub_cx_ax
 	xchg	ax,cx
 	push	ax
+
+loc_26134:
 	mov	al,[es:si]
 	inc	si
 	mov	[di],al
 	inc	di
-	db	0xe2,0xf7,0x59,0xeb,0x81
+	loop	loc_26134
+	pop	cx
+	jmp	short loc_260c1
 
 	push	bp
 	mov_bp_sp
