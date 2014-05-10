@@ -146,6 +146,10 @@
 	db	0x3b,0xd3 ; cmp dx,bx
 %endmacro
 
+%macro cmp_si_di 0
+	db	0x3b,0xf7 ; cmp si,di
+%endmacro
+
 %macro cmp_di_dx 0
 	db	0x3b,0xfa ; cmp di,dx
 %endmacro
