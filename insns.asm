@@ -20,10 +20,6 @@
 	dw	%1
 %endmacro
 
-%macro xor_ah_ah 0
-	db	0x30,0xe4 ; xor ah,ah
-%endmacro
-
 %macro add_di 1
 	db	0x81,0xc7
 	dw	%1
@@ -100,6 +96,10 @@
 
 %macro xor_cl_cl 0
 	db	0x32,0xc9 ; xor cl,cl
+%endmacro
+
+%macro xor_ah_ah 0
+	db	0x32,0xe4 ; xor ah,ah
 %endmacro
 
 %macro xor_ch_ch 0
