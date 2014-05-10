@@ -3209,10 +3209,12 @@ loc_19710:
 	mov	si,[si+0x5]
 	cmp	si,[di+0x5]
 	jz	loc_1970b
-	jmp short loc_196ed
+	jmp	short loc_196ed
 
 sub_19721:
-	db	0x8b,0x07,0x89,0x46,0x00,0x8b,0xdd
+	mov	ax,[bx]
+	mov	[bp+0x0],ax
+	mov_bx_bp
 
 loc_19728:
 	ret
