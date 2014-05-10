@@ -154,6 +154,10 @@
 	db	0x3b,0xfa ; cmp di,dx
 %endmacro
 
+%macro mov_al_cl 0
+	db	0x8a,0xc1 ; mov al,cl
+%endmacro
+
 %macro mov_al_dl 0
 	db	0x8a,0xc2 ; mov al,dl
 %endmacro
