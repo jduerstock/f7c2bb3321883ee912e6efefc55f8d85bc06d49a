@@ -134,6 +134,10 @@
 	db	0x33,0xc0 ; xor ax,ax
 %endmacro
 
+%macro xor_cx_cx 0
+	db	0x33,0xc9 ; xor cx,cx
+%endmacro
+
 %macro xor_dx_dx 0
 	db	0x33,0xd2 ; xor dx,dx
 %endmacro
@@ -142,8 +146,8 @@
 	db	0x33,0xdb ; xor bx,bx
 %endmacro
 
-%macro xor_cx_cx 0
-	db	0x33,0xc9 ; xor cx,cx
+%macro xor_bp_bp 0
+	db	0x33,0xed ; xor bp,bp
 %endmacro
 
 %macro xor_di_di 0
