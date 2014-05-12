@@ -7695,7 +7695,7 @@ loc_26089:
 	xchg	ax,cx
 	push	cx
 	shr	cx,1
- 	cld
+	cld
 	rep	movsw
 	jnc	loc_260a0
 	movsb
