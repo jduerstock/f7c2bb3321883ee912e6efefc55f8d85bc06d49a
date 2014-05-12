@@ -58,6 +58,10 @@
 	db	0x0b,0xdb ; or bx,bx
 %endmacro
 
+%macro or_di_di 0
+	db	0x0b,0xff ; or di,di
+%endmacro
+
 %macro sub_ah_ah 0
 	db	0x2a,0xe4 ; sub ah,ah
 %endmacro
