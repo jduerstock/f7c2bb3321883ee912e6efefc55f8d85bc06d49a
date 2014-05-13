@@ -178,6 +178,10 @@
 	db	0x3b,0xd3 ; cmp dx,bx
 %endmacro
 
+%macro cmp_sp_ax 0
+	db	0x3b,0xe0 ; cmp sp,ax
+%endmacro
+
 %macro cmp_si_di 0
 	db	0x3b,0xf7 ; cmp si,di
 %endmacro
