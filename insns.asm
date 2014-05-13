@@ -194,12 +194,20 @@
 	db	0x8a,0xc2 ; mov al,dl
 %endmacro
 
+%macro mov_al_bl 0
+	db	0x8a,0xc3 ; mov al,bl
+%endmacro
+
 %macro mov_al_ah 0
 	db	0x8a,0xc4 ; mov al,ah
 %endmacro
 
 %macro mov_al_dh 0
 	db	0x8a,0xc6 ; mov al,dh
+%endmacro
+
+%macro mov_al_bh 0
+	db	0x8a,0xc7 ; mov al,bh
 %endmacro
 
 %macro mov_cl_al 0
