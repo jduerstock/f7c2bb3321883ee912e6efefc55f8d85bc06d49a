@@ -32,16 +32,6 @@
 	dw	%1
 %endmacro
 
-%macro add_di 1
-	db	0x81,0xc7
-	dw	%1
-%endmacro
-
-%macro sub_si 1
-	db	0x81,0xee
-	dw	%1
-%endmacro
-
 %macro or_al_al 0
 	db	0x0a,0xc0 ; or al,al
 %endmacro
@@ -64,6 +54,10 @@
 
 %macro or_di_di 0
 	db	0x0b,0xff ; or di,di
+%endmacro
+
+%macro and_bx_bx 0
+	db	0x23,0xdb ; and bx,bx
 %endmacro
 
 %macro sub_ah_ah 0
@@ -196,6 +190,16 @@
 
 %macro cmp_di_dx 0
 	db	0x3b,0xfa ; cmp di,dx
+%endmacro
+
+%macro add_di 1
+	db	0x81,0xc7
+	dw	%1
+%endmacro
+
+%macro sub_si 1
+	db	0x81,0xee
+	dw	%1
 %endmacro
 
 %macro mov_al_cl 0
