@@ -158,6 +158,10 @@
 	db	0x33,0xed ; xor bp,bp
 %endmacro
 
+%macro xor_si_si 0
+	db	0x33,0xf6 ; xor si,si
+%endmacro
+
 %macro xor_di_di 0
 	db	0x33,0xff ; xor di,di
 %endmacro
