@@ -56,6 +56,10 @@
 	db	0x0b,0xff ; or di,di
 %endmacro
 
+%macro and_al_al 0
+	db	0x22,0xc0 ; and al,al
+%endmacro
+
 %macro and_bx_bx 0
 	db	0x23,0xdb ; and bx,bx
 %endmacro
