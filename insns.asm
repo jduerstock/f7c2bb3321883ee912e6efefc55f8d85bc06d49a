@@ -64,6 +64,11 @@
 	db	0x23,0xdb ; and bx,bx
 %endmacro
 
+%macro sub_ax 1
+	db	0x2d
+	dw	%1
+%endmacro
+
 %macro sub_ah_ah 0
 	db	0x2a,0xe4 ; sub ah,ah
 %endmacro
