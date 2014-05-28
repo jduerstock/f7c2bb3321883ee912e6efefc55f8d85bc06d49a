@@ -73,6 +73,10 @@
 	dw	%1
 %endmacro
 
+%macro sub_ah_cl 0
+	db	0x2a,0xe1 ; sub ah,cl
+%endmacro
+
 %macro sub_ah_ah 0
 	db	0x2a,0xe4 ; sub ah,ah
 %endmacro
