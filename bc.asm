@@ -7027,13 +7027,15 @@ loc_21b05:
 
 sub_21b06:
 	cmp	al,0x61
-	db	0x73,0x01
-
+	jnc	loc_21b0b
 	ret
+
+loc_21b0b:
 	cmp	al,0x7b
-	db	0x72,0x01
+	jc	loc_21b10
 	ret
 
+loc_21b10:
 	sub al,0x20
 	ret
 
