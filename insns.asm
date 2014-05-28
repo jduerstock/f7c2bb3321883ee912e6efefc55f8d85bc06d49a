@@ -189,6 +189,10 @@
 	db	0x3b,0xc1 ; cmp ax,cx
 %endmacro
 
+%macro cmp_ax_si 0
+	db	0x3b,0xc6 ; cmp ax,si
+%endmacro
+
 %macro cmp_cx_ax 0
 	db	0x3b,0xc8 ; cmp cx,ax
 %endmacro
