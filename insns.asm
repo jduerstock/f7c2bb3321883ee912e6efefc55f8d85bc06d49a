@@ -11,6 +11,10 @@
 	db	0x03,0xdb ; add bx,bx
 %endmacro
 
+%macro add_bx_si 0
+	db	0x03,0xde ; add bx,si
+%endmacro
+
 %macro add_si_ax 0
 	db	0x03,0xf0 ; add si,ax
 %endmacro
