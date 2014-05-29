@@ -5869,7 +5869,7 @@ loc_1cc0f:
 	cmp	byte [bx],0x28
 	jnz	loc_1cc2f
 	cmp	byte [bx+0x4],0x4
-	db	0x75,0x0f
+	jnz	loc_1cc2f
 	push	bx
 	mov	bx,[bx+0xd]
 	cmp	word [bx-0x3],0x4650
