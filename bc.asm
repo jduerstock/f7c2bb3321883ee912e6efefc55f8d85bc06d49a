@@ -5814,15 +5814,17 @@ loc_1cbb5:
 	push	ax
 	mov_al_ah
 	cmp	al,0xa
-	db	0x75,0x08
+	jnz	loc_1cbcc
 	cmp	al,[bx+0x1]
 	pop	ax
-	db	0x75,0x0e
-	db	0xeb,0x04
+	jnz	loc_1cbd8
+	jmp	short loc_1cbd0
 
 loc_1cbcc:
 	db	0xe8,0x92,0xa5
 	pop	ax
+
+loc_1cbd0:
 	mov	[bp-0xb],al
 	mov	[bp-0xc],ah
 	db	0xeb,0x05
