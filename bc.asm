@@ -5810,7 +5810,7 @@ loc_1cb85:
 loc_1cbb5:
 	call	word sub_1ddd5
 	cmp	al,[bp-0xb]
-	db	0x75,0x1b
+	jnz	loc_1cbd8
 	push	ax
 	mov_al_ah
 	cmp	al,0xa
