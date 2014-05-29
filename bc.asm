@@ -5879,7 +5879,7 @@ loc_1cc0f:
 
 loc_1cc2f:
 	cmp	byte [0x3607],0x2
-	db	0x74,0x17
+	jz	loc_1cc4d
 	mov	al,[bx]
 	cmp	al,0x3d
 	db	0x74,0x14
