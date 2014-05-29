@@ -3,6 +3,10 @@
 	db	0x02,0xc1 ; add al,cl
 %endmacro
 
+%macro add_ax_bx 0
+	db	0x03,0xc3 ; add ax,bx
+%endmacro
+
 %macro add_bx_ax 0
 	db	0x03,0xd8 ; add bx,ax
 %endmacro
