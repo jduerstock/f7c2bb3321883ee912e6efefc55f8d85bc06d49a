@@ -5830,11 +5830,11 @@ loc_1cbcc:
 loc_1cbd0:
 	mov	[bp-0xb],al
 	mov	[bp-0xc],ah
-	db	0xeb,0x05
+	jmp	short loc_1cbdd
 
 loc_1cbd8:
 	mov	al,0x6c
-	db	0xe8,0x70,0xc9
+	call	word sub_1954d
 
 loc_1cbdd:
 	db	0xe8,0xd1,0x00
