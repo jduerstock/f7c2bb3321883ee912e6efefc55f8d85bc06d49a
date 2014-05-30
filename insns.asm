@@ -125,6 +125,10 @@
 	db	0x2b,0xcb ; sub cx,bx
 %endmacro
 
+%macro sub_cx_si 0
+	db	0x2b,0xce ; sub cx,si
+%endmacro
+
 %macro sub_cx_di 0
 	db	0x2b,0xcf ; sub cx,di
 %endmacro
