@@ -3992,6 +3992,8 @@ loc_195a1:
 loc_195bc:
 	xchg	bx,dx
 	inc	word [bx]
+
+loc_195c0:
 	mov	cx,[0x26c8]
 	mov	si,0x616
 	sub_cx_si
@@ -4045,7 +4047,10 @@ loc_19601:
 	jmp	short loc_19601
 
 loc_19611:
-	db	0x5e,0xe8,0x69,0xa1,0xe8,0xc1,0x97,0x75,0xa6
+	pop	si
+	call	word sub_1377e
+	call	word sub_12dd9
+	jnz	loc_195c0
 
 loc_1961a:
 	db	0xa0,0xa8,0x26,0xa2,0xa7,0x26
