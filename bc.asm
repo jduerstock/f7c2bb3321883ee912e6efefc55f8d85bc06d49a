@@ -4117,7 +4117,7 @@ loc_19668:
 	inc	word [0x5f6]
 	inc	word [0x5f7]
 	jmp	word loc_13414
-	
+
 	db	0x00
 
 	retf
@@ -4154,7 +4154,7 @@ sub_1969c:
 	retf	0x2
 
 	nop
-	
+
 	db	0x00,0x00,0x00,0x00
 
 	xor_bx_bx
