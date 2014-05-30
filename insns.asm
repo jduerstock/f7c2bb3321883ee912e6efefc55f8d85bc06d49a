@@ -161,6 +161,10 @@
 	db	0x32,0xc9 ; xor cl,cl
 %endmacro
 
+%macro xor_bl_bl 0
+	db	0x32,0xdb ; xor bl,bl
+%endmacro
+
 %macro xor_ah_ah 0
 	db	0x32,0xe4 ; xor ah,ah
 %endmacro
