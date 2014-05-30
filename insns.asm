@@ -85,6 +85,10 @@
 	dw	%1
 %endmacro
 
+%macro sub_al_dh 0
+	db	0x2a,0xc6 ; sub al,dh
+%endmacro
+
 %macro sub_ah_cl 0
 	db	0x2a,0xe1 ; sub ah,cl
 %endmacro
