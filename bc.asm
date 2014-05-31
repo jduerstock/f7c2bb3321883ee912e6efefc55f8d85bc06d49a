@@ -5967,7 +5967,7 @@ sub_1b544:
 loc_1b557:
 	push	bx
 	mov	bx,0x31d0
-	db	0xe8,0xb9,0xff
+	call	word sub_1b517
 	pop	bx
 	pop	cx
 	db	0xe8,0x7f,0xff
