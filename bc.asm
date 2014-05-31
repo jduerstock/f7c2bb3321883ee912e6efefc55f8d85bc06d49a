@@ -5921,13 +5921,14 @@ loc_1b508:
 	push	bx
 	mov_bx_di
 	dec	bx
-	db	0xe8,0x08,0x00
+	call	word sub_1b517
 	pop	bx
 	pop	cx
 	add	[di],cx
 	add	di,byte +0x5
 	ret
 
+sub_1b517:
 	push	word [0x2b2f]
 	db	0xe8,0x8c,0xfc
 	mov	ax,[bx+0x1]
