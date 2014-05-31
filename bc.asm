@@ -5970,7 +5970,7 @@ loc_1b557:
 	call	word sub_1b517
 	pop	bx
 	pop	cx
-	db	0xe8,0x7f,0xff
+	call	word sub_1b4e2
 	mov_si_di
 	pop	ax
 	mov	di,0x325d
