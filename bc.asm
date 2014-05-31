@@ -5907,7 +5907,7 @@ loc_1b4ec:
 loc_1b4f4:
 	add	cx,[di]
 	cmp	cx,0x83
-	db	0x73,0x0c
+	jnc	loc_1b508
 	mov_ax_di
 	inc	ax
 	inc	ax
@@ -5917,6 +5917,7 @@ loc_1b4f4:
 	pop	cx
 	ret
 
+loc_1b508:
 	push	bx
 	mov_bx_di
 	dec	bx
