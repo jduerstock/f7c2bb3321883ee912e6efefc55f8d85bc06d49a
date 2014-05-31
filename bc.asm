@@ -5868,7 +5868,7 @@ loc_1b4b4:
 	mov	ah,[si+0x7]
 	pop	si
 	and_ah_ah
-	db	0x74,0x0a
+	jz	loc_1b4d0
 	mov	al,0x80
 	stosw
 	mov	ax,[bx+0x3]
@@ -5876,11 +5876,14 @@ loc_1b4b4:
 	mov_di_si
 	ret
 
+loc_1b4d0:
 	mov	al,0x8a
-	db	0xeb,0x02
+	jmp	short loc_1b4d6
 
 loc_1b4d4:
 	mov	al,0x8b
+
+loc_1b4d6:
 	stosb
 	mov	ax,[bx+0x3]
 
