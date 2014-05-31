@@ -5867,7 +5867,7 @@ loc_1b4b4:
 	mov	si,[bx+0x7]
 	mov	ah,[si+0x7]
 	pop	si
-	db	0x22,0xe4 ; and ah,ah
+	and_ah_ah
 	db	0x74,0x0a
 	mov	al,0x80
 	stosw
