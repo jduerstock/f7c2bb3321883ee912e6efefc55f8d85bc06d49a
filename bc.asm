@@ -5964,13 +5964,15 @@ sub_1b544:
 	jnc	loc_1b557
 	add	al,[0x325d]
 	cmp	al,0x80
-	db	0x72,0x08
+	jc	loc_1b55f
 
 loc_1b557:
 	push	bx
 	mov	bx,0x31d0
 	call	word sub_1b517
 	pop	bx
+
+loc_1b55f:
 	pop	cx
 	call	word sub_1b4e2
 	mov_si_di
