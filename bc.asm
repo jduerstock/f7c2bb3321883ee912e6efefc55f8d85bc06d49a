@@ -3989,7 +3989,8 @@ sub_17f72:
 	retf
 
 sub_17f76:
-	db	0xe8,0x07,0x35,0xcb
+	call	word sub_1b480
+	retf
 
 sub_17f7a:
 	db	0xe8,0x88,0x34,0xcb
@@ -5823,6 +5824,7 @@ sub_1b462:
 	mov_di_si
 	ret
 
+sub_1b480:
 	add	cx,byte +0x9
 	mov	ax,0x6
 	call	word sub_1b544
