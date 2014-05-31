@@ -5897,11 +5897,14 @@ sub_1b4e2:
 	push	cx
 	add	[0x2d3b],cx
 	mov	di,0x31d1
-	db	0xeb,0x08
+	jmp	short loc_1b4f4
 
+loc_1b4ec:
 	push	cx
 	add	[0x2d44],cx
 	mov	di,0x32e6
+
+loc_1b4f4:
 	add	cx,[di]
 	cmp	cx,0x83
 	db	0x73,0x0c
