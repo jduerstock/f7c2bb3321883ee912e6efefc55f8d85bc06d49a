@@ -5581,6 +5581,8 @@ sub_1a862:
 	lodsb
 	mov_cx_ax
 	rep	movsb
+
+loc_1a87d:
 	or	byte [es:di-0x1],0x80
 	pop	bx
 	pop	cx
@@ -5598,7 +5600,9 @@ loc_1a888:
 	push	dx
 	mov	dx,[di+0x3]
 	call	word sub_1384d
-	db	0x5a,0x8b,0xfb,0xeb,0xdf
+	pop	dx
+	mov_di_bx
+	jmp	short loc_1a87d
 
 sub_1a89e:
 	db	0x1e,0x56
