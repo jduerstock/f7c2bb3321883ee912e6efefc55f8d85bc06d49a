@@ -52,6 +52,10 @@
 	db	0x0b,0xc0 ; or ax,ax
 %endmacro
 
+%macro or_ax_cx 0
+	db	0x0b,0xc1 ; or ax,cx
+%endmacro
+
 %macro or_cx_cx 0
 	db	0x0b,0xc9 ; or cx,cx
 %endmacro
