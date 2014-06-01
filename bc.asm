@@ -6384,7 +6384,7 @@ sub_1b574:
 loc_1b773:
 	push	di
 	cmp	word [es:di+0x3],byte -0x1
-	db	0x74,0x73
+	jz	loc_1b7ee
 	push	es
 	mov	dx,[es:di+0x3]
 
@@ -6438,6 +6438,8 @@ loc_1b780:
 
 loc_1b7ed:
 	pop	es
+
+loc_1b7ee:
 	pop	di
 	inc	cl
 	mov	di,[es:di]
