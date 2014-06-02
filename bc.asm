@@ -6742,6 +6742,8 @@ sub_1ba01:
 	mov	bx,[0x3500]
 	or_bx_bx
 	jnz	loc_1ba13
+
+loc_1ba0e:
 	mov	al,0x5b
 	jmp	word sub_1954d
 
@@ -6749,13 +6751,15 @@ loc_1ba13:
 	mov	al,0x1
 	mov_ah_al
 	call	word sub_1bf1c
-	db	0x74,0xf2
-	db	0x8b,0x5f,0x04
-	db	0x8a,0x07
-	db	0xeb,0x03
+	jz	loc_1ba0e
+	mov	bx,[bx+0x4]
+	mov	al,[bx]
+	jmp	short loc_1ba26
 
 loc_1ba23:
-	db	0xe8,0x4c,0x4a
+	call	word sub_20472
+
+loc_1ba26:
 	db	0x3c,0xa7
 	db	0x74,0x0d
 	db	0x3c,0xab
