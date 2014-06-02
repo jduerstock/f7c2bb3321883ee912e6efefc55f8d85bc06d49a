@@ -257,6 +257,10 @@
 	db	0x3b,0xd6 ; cmp dx,si
 %endmacro
 
+%macro cmp_bx_dx 0
+	db	0x3b,0xda ; cmp bx,dx
+%endmacro
+
 %macro cmp_sp_ax 0
 	db	0x3b,0xe0 ; cmp sp,ax
 %endmacro
@@ -307,6 +311,10 @@
 	db	0x8a,0xc8 ; mov cl,al
 %endmacro
 
+%macro mov_bl_al 0
+	db	0x8a,0xd8 ; mov bl,al
+%endmacro
+
 %macro mov_bl_ah 0
 	db	0x8a,0xdc ; mov bl,ah
 %endmacro
@@ -317,6 +325,10 @@
 
 %macro mov_ch_al 0
 	db	0x8a,0xe8 ; mov ch,al
+%endmacro
+
+%macro mov_bh_al 0
+	db	0x8a,0xf8 ; mov bh,al
 %endmacro
 
 %macro mov_ax_cx 0
