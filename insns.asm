@@ -455,6 +455,10 @@
 	db	0x8b,0xf8 ; mov di,ax
 %endmacro
 
+%macro mov_di_cx 0
+	db	0x8b,0xf9 ; mov di,cx
+%endmacro
+
 %macro mov_di_dx 0
 	db	0x8b,0xfa ; mov di,dx
 %endmacro
