@@ -7858,7 +7858,7 @@ loc_1c16a:
 	push	ax
 	push	dx
 	call	word sub_1bf08
- 	pop	dx
+	pop	dx
 	pop	ax
 	jmp	short sub_1c15e
 
