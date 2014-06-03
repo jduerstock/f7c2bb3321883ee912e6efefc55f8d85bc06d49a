@@ -76,6 +76,10 @@
 	db	0x0b,0xdb ; or bx,bx
 %endmacro
 
+%macro or_sp_sp 0
+	db	0x0b,0xe4 ; or sp,sp
+%endmacro
+
 %macro or_si_si 0
 	db	0x0b,0xf6 ; or si,si
 %endmacro
