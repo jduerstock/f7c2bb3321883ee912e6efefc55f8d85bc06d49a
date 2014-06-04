@@ -347,6 +347,10 @@
 	db	0x8a,0xe9 ; mov ch,cl
 %endmacro
 
+%macro mov_dh_dl 0
+	db	0x8a,0xf2 ; mov dh,dl
+%endmacro
+
 %macro mov_bh_al 0
 	db	0x8a,0xf8 ; mov bh,al
 %endmacro
