@@ -2303,6 +2303,8 @@ loc_13688:
 
 sub_136b2:
 	mov	bx,[bx]
+
+loc_136b4:
 	or_bx_bx
 	jnz	loc_136b9
 	ret
@@ -2311,7 +2313,13 @@ loc_136b9:
 	mov	cx,[bx-0x4]
 	push	bx
 	call	word sub_20570
-	db	0x87,0xda,0x5b,0x89,0x57,0xfc,0xa1,0x64,0x1f,0x87,0x07,0x8b,0xd8,0xeb,0xe5
+	xchg	bx,dx
+	pop	bx
+	mov	[bx-0x4],dx
+	mov	ax,[0x1f64]
+	xchg	ax,[bx]
+	mov_bx_ax
+	jmp	short loc_136b4
 
 sub_136cf:
 	db	0x02
