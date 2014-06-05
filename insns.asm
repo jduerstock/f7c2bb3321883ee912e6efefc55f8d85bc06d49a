@@ -403,6 +403,10 @@
 	db	0x8b,0xd3 ; mov dx,bx
 %endmacro
 
+%macro mov_dx_si 0
+	db	0x8b,0xd6 ; mov dx,si
+%endmacro
+
 %macro mov_dx_di 0
 	db	0x8b,0xd7 ; mov dx,di
 %endmacro
