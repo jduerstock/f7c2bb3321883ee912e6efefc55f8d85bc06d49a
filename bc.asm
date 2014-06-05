@@ -2322,8 +2322,11 @@ loc_136b9:
 	jmp	short loc_136b4
 
 sub_136cf:
-	db	0x02
-	db	0xd8,0x73,0x02,0xfe,0xc7
+	add_bl_al
+	jnc	loc_136d5
+	inc	bh
+
+loc_136d5:
 	ret
 
 sub_136d6:
