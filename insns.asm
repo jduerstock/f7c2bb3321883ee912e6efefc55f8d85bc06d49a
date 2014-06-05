@@ -261,6 +261,10 @@
 	db	0x3b,0xc8 ; cmp cx,ax
 %endmacro
 
+%macro cmp_cx_dx 0
+	db	0x3b,0xca ; cmp cx,dx
+%endmacro
+
 %macro cmp_dx_bx 0
 	db	0x3b,0xd3 ; cmp dx,bx
 %endmacro
