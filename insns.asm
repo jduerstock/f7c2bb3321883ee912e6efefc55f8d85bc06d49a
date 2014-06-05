@@ -100,6 +100,10 @@
 	db	0x22,0xe4 ; and ah,ah
 %endmacro
 
+%macro and_ax_ax 0
+	db	0x23,0xc0 ; and ax,ax
+%endmacro
+
 %macro and_bx_bx 0
 	db	0x23,0xdb ; and bx,bx
 %endmacro
