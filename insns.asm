@@ -11,6 +11,10 @@
 	db	0x02,0xd8 ; add bl,al
 %endmacro
 
+%macro add_ax_dx 0
+	db	0x03,0xc2 ; add ax,dx
+%endmacro
+
 %macro add_ax_bx 0
 	db	0x03,0xc3 ; add ax,bx
 %endmacro
