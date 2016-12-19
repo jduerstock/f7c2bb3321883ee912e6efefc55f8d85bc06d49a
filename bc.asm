@@ -15216,7 +15216,7 @@ sub_2b9db:
 	db	0x74,0x03
 	or	ah,0x2
 	ret
-	
+
 	or	byte [0x19],0x4
 	ret
 
