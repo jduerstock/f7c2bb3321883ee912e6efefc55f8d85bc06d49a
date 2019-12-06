@@ -4734,7 +4734,7 @@ sub_0001_5f3b:
 	jna	L0001_5f37
 	push	ds
 	push	si
-	mov	bx,0x1dc4
+	mov	bx,0x1dc4 ; seg013
 	mov	es,bx
 	mov	di,0x34
 	mov	al,[0x815]
